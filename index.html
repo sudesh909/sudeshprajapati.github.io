@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sudesh Prajapati — DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Sudesh Prajapati — DevOps Engineer | Cloud | CI/CD | Containers | Automation" />
+  <style>
+    :root{--bg:#0b0f14;--card:#0f1720;--muted:#8b9aa6;--accent:#06b6d4}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#e6eef6;background:linear-gradient(180deg,#071026 0%, #071026 40%, #071026 100%);}
+    .container{max-width:1100px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:64px;height:64px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;border-radius:12px;color:#021826;font-weight:700}
+    .nav a{color:var(--muted);margin-left:18px;text-decoration:none}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:32px;align-items:center;margin-bottom:40px}
+    .hero h1{font-size:32px;margin:0 0 10px}
+    .hero p.lead{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:#021826;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(6,182,212,0.15)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    .profile-img{width:100%;height:360px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#021826,#042f3a);color:rgba(255,255,255,0.9);font-weight:700}
+    section{margin-bottom:28px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .skills ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+    .skills li{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;color:var(--muted);font-size:14px}
+    .timeline{display:flex;flex-direction:column;gap:14px}
+    .timeline-item{display:flex;gap:14px;align-items:flex-start}
+    .timeline-item h4{margin:0}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .project-card{padding:16px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));}
+    footer{display:flex;justify-content:space-between;align-items:center;padding-top:18px;border-top:1px dashed rgba(255,255,255,0.03);color:var(--muted)}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;}.grid-3{grid-template-columns:1fr}.projects{grid-template-columns:1fr}}
+    .highlight{color:var(--accent);font-weight:700}
+    .small{font-size:13px;color:var(--muted)}
+    .contact a{display:inline-block;margin-right:12px;color:var(--muted);text-decoration:none}
+    .tech-icons{display:flex;gap:8px;flex-wrap:wrap}
+    .tech-pill{background:rgba(255,255,255,0.02);padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SP</div>
+        <div>
+          <div style="font-size:14px;color:var(--muted)">Sudesh Prajapati</div>
+          <div style="font-weight:700">DevOps Engineer</div>
+        </div>
+      </div>
+      <nav class="nav small">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Hi — I'm Sudesh. DevOps Engineer.</h1>
+        <p class="lead">I build and operate scalable cloud infrastructure, automate CI/CD pipelines, and deploy containerized applications across AWS, Azure and GCP.</p>
+        <div class="cta">
+          <a class="btn" href="./SUDESH_PRAJAPATI_DevOps.pdf" download>Download Resume</a>
+          <a class="btn ghost" href="#projects">See Projects</a>
+        </div>
+
+        <div style="margin-top:22px">
+          <div class="card small" style="padding:12px;display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:13px;color:var(--muted)">Current</div>
+              <div style="font-weight:700">DevOps Engineer — Synsoft Global</div>
+            </div>
+            <div class="small">Contact: +91 9691329042</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="profile-img">
+          <img src="passport.jpg" alt="Sudesh Prajapati" style="width:100%;height:100%;object-fit:cover;border-radius:10px;" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="card">
+        <h3>About Me</h3>
+        <p class="small">I am a DevOps Engineer with hands-on experience administering Linux and Windows servers, building CI/CD pipelines using Jenkins and GitLab/GitHub Actions, and provisioning infrastructure with Terraform. I have worked across multi-cloud environments (AWS, Azure, GCP), deployed containerized applications on Kubernetes (EKS/AKS) and automated deployments for microservices-based architectures.</p>
+        <p class="small" style="margin-top:8px">Key responsibilities: cloud infra, pipeline automation, container orchestration, monitoring and web hosting.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="card">
+        <h3>Skills</h3>
+        <div class="grid-3" style="margin-top:12px">
+          <div>
+            <h4>Cloud & Infra</h4>
+            <div class="skills"><ul>
+              <li>AWS</li><li>Azure</li><li>GCP</li>
+            </ul></div>
+          </div>
+          <div>
+            <h4>CI / CD</h4>
+            <div class="skills"><ul>
+              <li>Jenkins</li><li>GitLab</li><li>GitHub Actions</li>
+            </ul></div>
+          </div>
+          <div>
+            <h4>Containers & IaC</h4>
+            <div class="skills"><ul>
+              <li>Docker</li><li>Kubernetes (EKS/AKS)</li><li>Terraform</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px">
+          <h4>Other</h4>
+          <div class="tech-icons" style="margin-top:8px">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">React / Next.js</span>
+            <span class="tech-pill">Nginx / Apache / IIS</span>
+            <span class="tech-pill">PostgreSQL / RDS</span>
+            <span class="tech-pill">Ansible</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="card">
+        <h3>Experience</h3>
+        <div class="timeline" style="margin-top:12px">
+          <div class="timeline-item">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px"></div>
+            <div>
+              <h4>DevOps Engineer — Synsoft Global <span class="small">(Sep 2023 – Present)</span></h4>
+              <div class="small">Administered Linux and Windows servers across AWS, Azure, and GCP. Managed CI/CD (Jenkins, GitLab). Deployed containerized applications and multi-cloud solutions.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px"></div>
+            <div>
+              <h4>DevOps Engineer — Tech-Radix Pvt. Ltd. <span class="small">(Apr 2022 – Sep 2023)</span></h4>
+              <div class="small">Delivered scalable cloud infrastructure with EC2, RDS, S3, EKS and automated deployments via GitLab CI/CD.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px"></div>
+            <div>
+              <h4>Linux Server Admin — Siya-Tech Ventures Pvt Ltd <span class="small">(Jan 2021 – Mar 2022)</span></h4>
+              <div class="small">Managed Linux and Windows servers, Jenkins freestyle pipelines, and deployed Node.js/Angular/React applications.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px"></div>
+            <div>
+              <h4>Linux Server Admin / AWS — Alphawizz Technology Pvt. Ltd. <span class="small">(Jul 2019 – Jan 2021)</span></h4>
+              <div class="small">Maintained Apache/Nginx/Tomcat, administered AWS services (EC2, S3, RDS), and managed hosting via CPanel and IIS.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px"></div>
+            <div>
+              <h4>IT Operations Executive & Network Auditor — TCS iON <span class="small">(Jul 2018 – Jun 2019)</span></h4>
+              <div class="small">Conducted online examinations, managed exam server setup, and performed network auditing across multiple locations.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px"></div>
+            <div>
+              <h4>Network Engineer — Orlando Academy <span class="small">(Dec 2017 – May 2018)</span></h4>
+              <div class="small">Managed 700+ systems, coordinated certification exams (AWS, CCNA), and handled on-prem infrastructure operations.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px"></div>
+            <div>
+              <h4>Network Engineer & Web Server Admin — Synoris Technology Pvt. Ltd. <span class="small">(Jan 2017 – Sep 2017)</span></h4>
+              <div class="small">Addressed hardware and SEO issues, managed server uploads via FileZilla/OwnCloud, and supported website hosting operations.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="card">
+        <h3>Selected Projects</h3>
+        <div class="projects" style="margin-top:12px">
+          <div class="project-card">
+            <h4>CryptoPad</h4>
+            <div class="small">Stack: Django backend (EKS), React frontend (S3), GitLab CI/CD. Role: Infra and CI/CD automation.</div>
+          </div>
+          <div class="project-card">
+            <h4>BlinkPay One</h4>
+            <div class="small">Full AWS deployment (EC2, RDS, S3). Implemented CI/CD pipelines and monitoring.</div>
+          </div>
+          <div class="project-card">
+            <h4>Yajman App</h4>
+            <div class="small">Angular + NestJS, AWS (EC2, RDS, Lambda), CI/CD via Jenkins & GitHub.</div>
+          </div>
+          <div class="project-card">
+            <h4>Cielo Social</h4>
+            <div class="small">Azure AKS, PostgreSQL, microservices. Implemented deployments and infra automation.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="card">
+        <h3>Education & Certifications</h3>
+        <div class="small">B.Com (Economics) — A.P.S. University, 2015</div>
+        <div class="small">RHCSA — Red Hat Certified System Administrator (Cert ID: 180-178-543)</div>
+        <div class="small">Jetking Certified Hardware Network Engineer (JCHNE+), 2016</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <h3>Contact</h3>
+        <p class="small">Phone: +91 9691329042<br/>Email: <a href="mailto:sudeshprajapati48@gmail.com" style="color:var(--accent)">sudeshprajapati48@gmail.com</a></p>
+        <div style="margin-top:10px">
+          <a class="btn" href="mailto:sudeshprajapati48@gmail.com">Email Me</a>
+          <a class="btn ghost" href="#">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="small">© "Sudesh Prajapati" — DevOps Engineer</div>
+      <div class="small">Built with HTML, CSS & JS</div>
+    </footer>
+  </div>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id=a.getAttribute('href');
+        if(id==='#') return;
+        const el=document.querySelector(id);
+        if(!el) return;
+        el.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    })
+  </script>
+</body>
+</html>
