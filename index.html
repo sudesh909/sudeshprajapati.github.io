@@ -37,7 +37,7 @@
     .small{font-size:13px;color:var(--muted)}
     .contact a{display:inline-block;margin-right:12px;color:var(--muted);text-decoration:none}
     .tech-icons{display:flex;gap:8px;flex-wrap:wrap}
-    .tech-pill{background:rgba(255,255,255,0.05);padding:8px 12px;border-radius:12px;font-size:13px;color:#e6eef6;display:flex;align-items:center;gap:6px;cursor:pointer;transition:all 0.25s ease;border:1px solid rgba(255,255,255,0.06);}
+    .tech-pill{background:rgba(255,255,255,0.05);padding:8px 12px;border-radius:12px;font-size:13px;color:#e6eef6;display:flex;align-items:center;gap:6px;transition:all 0.25s ease;border:1px solid rgba(255,255,255,0.06);}
   .skills li:hover{background:rgba(6,182,212,0.15);transform:translateY(-3px);box-shadow:0 0 12px rgba(6,182,212,0.4);border-color:rgba(6,182,212,0.4);} 
 .tech-pill:hover{background:rgba(6,182,212,0.15);transform:translateY(-3px);box-shadow:0 0 12px rgba(6,182,212,0.4);border-color:rgba(6,182,212,0.4);} 
 </style>
@@ -110,7 +110,7 @@
           <div>
             <h4>Version Control</h4>
             <div class="skills"><ul>
-              <li><img src="jenkins.png" alt="GitHub" style="height:18px;vertical-align:middle;">GitHub</li>
+              <li><img src="github.png" alt="GitHub" style="height:18px;vertical-align:middle;">GitHub</li>
               <li><img src="gitlab.png" alt="GitLab" style="height:18px;vertical-align:middle;">GitLab</li>
               <li><img src="bitbucket.png" alt="Bitbucket" style="height:18px;vertical-align:middle;">Bitbucket</li>
             </ul></div>
@@ -123,28 +123,17 @@
               <li><img src="github.png" alt="GitHub Actions" style="height:18px;vertical-align:middle;">GitHub Actions</li>
             </ul></div>
           </div>
-          <div>
-            <h4>Containers & IaC</h4>
-            <div class="skills"><ul>
-              <li><img src="docker.png" alt="Docker" style="height:18px;vertical-align:middle;">Docker</li>
-              <li><img src="kubernetes.png" alt="Kubernetes" style="height:18px;vertical-align:middle;">Kubernetes (EKS/AKS)</li>
-              <li><img src="terraform.png" alt="Terraform" style="height:18px;vertical-align:middle;">Terraform</li>
-            </ul></div>
-          </div>
+        </div>
+        <div>
+          <h4>Containers & IaC</h4>
+          <div class="skills"><ul>
+            <li><img src="docker.png" alt="Docker" style="height:18px;vertical-align:middle;">Docker</li>
+            <li><img src="kubernetes.png" alt="Kubernetes" style="height:18px;vertical-align:middle;">Kubernetes (EKS/AKS)</li>
+            <li><img src="terraform.png" alt="Terraform" style="height:18px;vertical-align:middle;">Terraform</li>
+          </ul></div>
         </div>
 
-        <!-- <div style="margin-top:14px">
-          <h4>Other</h4>
-          <div class="tech-icons" style="margin-top:8px">
-            <span class="tech-pill"><img src="python.png" style="height:14px">Python</span>
-            <span class="tech-pill"><img src="nodejs.png" style="height:14px">Node.js</span>
-            <span class="tech-pill"><img src="react.png" style="height:14px">React / Next.js</span>
-            <span class="tech-pill"><img src="nginx.png" style="height:14px">Nginx / Apache / IIS</span>
-            <span class="tech-pill"><img src="postgresql.png" style="height:14px">PostgreSQL / RDS</span>
-            <span class="tech-pill"><img src="ansible.png" style="height:14px">Ansible</span>
-          </div>
-        </div> -->
-
+        
         <div style="margin-top:18px">
           <h4>CI/CD & Application Deployment</h4>
           <div class="tech-icons" style="margin-top:8px">
@@ -164,8 +153,8 @@
         <div style="margin-top:18px">
           <h4>Operating Systems</h4>
           <div class="tech-icons" style="margin-top:8px">
-            <span class="tech-pill">Linux ( Ubuntu, CentOS, RHEL )</span>
-            <span class="tech-pill">Windows Server</span>
+            <span class="tech-pill"><img src="linux.png" alt="Linux ( Ubuntu, CentOS, RHEL )" style="height:18px;vertical-align:middle;">Linux ( Ubuntu, CentOS, RHEL )</span>
+            <span class="tech-pill"><img src="windows.png" alt="Windows" style="height:18px;vertical-align:middle;">Windows</span>
           </div>
         </div>
 
@@ -248,7 +237,7 @@
 
     <section id="projects">
       <div class="card">
-        <h3>Projects</h3>
+        <h3>Selected Projects</h3>
         <div class="projects" style="margin-top:12px">
           <div class="project-card">
             <h4>CryptoPad</h4>
@@ -311,5 +300,3 @@
   </script>
 </body>
 </html>
-
-
