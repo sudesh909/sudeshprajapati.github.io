@@ -25,7 +25,7 @@
     section{margin-bottom:28px}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .skills ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
-    .skills li{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;color:var(--muted);font-size:14px}
+    .skills li{background:rgba(255,255,255,0.05);padding:10px 14px;border-radius:12px;color:#e6eef6;font-size:14px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.25s ease;border:1px solid rgba(255,255,255,0.06);}
     .timeline{display:flex;flex-direction:column;gap:14px}
     .timeline-item{display:flex;gap:14px;align-items:flex-start}
     .timeline-item h4{margin:0}
@@ -33,12 +33,14 @@
     .project-card{padding:16px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));}
     footer{display:flex;justify-content:space-between;align-items:center;padding-top:18px;border-top:1px dashed rgba(255,255,255,0.03);color:var(--muted)}
     @media(max-width:900px){.hero{grid-template-columns:1fr;}.grid-3{grid-template-columns:1fr}.projects{grid-template-columns:1fr}}
-    .highlight{font-weight:700}
+    .highlight{color:var(--accent);font-weight:700}
     .small{font-size:13px;color:var(--muted)}
     .contact a{display:inline-block;margin-right:12px;color:var(--muted);text-decoration:none}
     .tech-icons{display:flex;gap:8px;flex-wrap:wrap}
-    .tech-pill{background:rgba(255,255,255,0.02);padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted)}
-  </style>
+    .tech-pill{background:rgba(255,255,255,0.05);padding:8px 12px;border-radius:12px;font-size:13px;color:#e6eef6;display:flex;align-items:center;gap:6px;cursor:pointer;transition:all 0.25s ease;border:1px solid rgba(255,255,255,0.06);}
+  .skills li:hover{background:rgba(6,182,212,0.15);transform:translateY(-3px);box-shadow:0 0 12px rgba(6,182,212,0.4);border-color:rgba(6,182,212,0.4);} 
+.tech-pill:hover{background:rgba(6,182,212,0.15);transform:translateY(-3px);box-shadow:0 0 12px rgba(6,182,212,0.4);border-color:rgba(6,182,212,0.4);} 
+</style>
 </head>
 <body>
   <div class="container">
@@ -60,8 +62,7 @@
 
     <section class="hero">
       <div>
-        <h1>Sudesh Prajapati</h1>
-        <h3 class="highlight">Designation: DevOps Engineer</h3>
+        <h1>Hi — I'm Sudesh. DevOps Engineer.</h1>
         <p class="lead">I build and operate scalable cloud infrastructure, automate CI/CD pipelines, and deploy containerized applications across AWS, Azure and GCP.</p>
         <div class="cta">
           <a class="btn" href="./SUDESH_PRAJAPATI_DevOps.pdf" download>Download Resume</a>
@@ -71,10 +72,10 @@
         <div style="margin-top:22px">
           <div class="card small" style="padding:12px;display:flex;justify-content:space-between;align-items:center">
             <div>
-              <div style="font-size:13px;color:var(--muted)">Currently Working As</div>
-              <div style="font-weight:700">DevOps Engineer At Synsoft Global</div>
+              <div style="font-size:13px;color:var(--muted)">Current</div>
+              <div style="font-weight:700">DevOps Engineer — Synsoft Global</div>
             </div>
-            <div class="small">Mail: sudeshprajapati48@gmail.com | Contact: +91 9691329042</div>
+            <div class="small">Contact: +91 9691329042</div>
           </div>
         </div>
       </div>
@@ -101,34 +102,83 @@
           <div>
             <h4>Cloud & Infra</h4>
             <div class="skills"><ul>
-              <li>AWS</li><li>Azure</li><li>GCP</li>
+              <li><img src="aws.png" alt="AWS" style="height:18px;vertical-align:middle;">AWS</li>
+              <li><img src="azure.png" alt="Azure" style="height:18px;vertical-align:middle;">Azure</li>
+              <li><img src="gcp.png" alt="GCP" style="height:18px;vertical-align:middle;">GCP</li>
+            </ul></div>
+          </div>
+          <div>
+            <h4>Version Control</h4>
+            <div class="skills"><ul>
+              <li><img src="jenkins.png" alt="GitHub" style="height:18px;vertical-align:middle;">GitHub</li>
+              <li><img src="gitlab.png" alt="GitLab" style="height:18px;vertical-align:middle;">GitLab</li>
+              <li><img src="bitbucket.png" alt="Bitbucket" style="height:18px;vertical-align:middle;">Bitbucket</li>
             </ul></div>
           </div>
           <div>
             <h4>CI / CD</h4>
             <div class="skills"><ul>
-              <li>Jenkins</li><li>GitLab</li><li>GitHub Actions</li>
+              <li><img src="jenkins.png" alt="Jenkins" style="height:18px;vertical-align:middle;">Jenkins</li>
+              <li><img src="gitlab.png" alt="GitLab" style="height:18px;vertical-align:middle;">GitLab</li>
+              <li><img src="github-actions.png" alt="GitHub Actions" style="height:18px;vertical-align:middle;">GitHub Actions</li>
             </ul></div>
           </div>
           <div>
             <h4>Containers & IaC</h4>
             <div class="skills"><ul>
-              <li>Docker</li><li>Kubernetes (EKS/AKS)</li><li>Terraform</li>
+              <li><img src="docker.png" alt="Docker" style="height:18px;vertical-align:middle;">Docker</li>
+              <li><img src="kubernetes.png" alt="Kubernetes" style="height:18px;vertical-align:middle;">Kubernetes (EKS/AKS)</li>
+              <li><img src="terraform.png" alt="Terraform" style="height:18px;vertical-align:middle;">Terraform</li>
             </ul></div>
           </div>
         </div>
 
-        <div style="margin-top:14px">
+        <!-- <div style="margin-top:14px">
           <h4>Other</h4>
           <div class="tech-icons" style="margin-top:8px">
-            <span class="tech-pill">Python</span>
+            <span class="tech-pill"><img src="python.png" style="height:14px">Python</span>
+            <span class="tech-pill"><img src="nodejs.png" style="height:14px">Node.js</span>
+            <span class="tech-pill"><img src="react.png" style="height:14px">React / Next.js</span>
+            <span class="tech-pill"><img src="nginx.png" style="height:14px">Nginx / Apache / IIS</span>
+            <span class="tech-pill"><img src="postgresql.png" style="height:14px">PostgreSQL / RDS</span>
+            <span class="tech-pill"><img src="ansible.png" style="height:14px">Ansible</span>
+          </div>
+        </div> -->
+
+        <div style="margin-top:18px">
+          <h4>CI/CD & Application Deployment</h4>
+          <div class="tech-icons" style="margin-top:8px">
+            <span class="tech-pill">Django</span>
+            <span class="tech-pill">Flask</span>
+            <span class="tech-pill">FastAPI</span>
+            <span class="tech-pill">Angular</span>
+            <span class="tech-pill">Next.js</span>
             <span class="tech-pill">Node.js</span>
-            <span class="tech-pill">React / Next.js</span>
-            <span class="tech-pill">Nginx / Apache / IIS</span>
-            <span class="tech-pill">PostgreSQL / RDS</span>
-            <span class="tech-pill">Ansible</span>
+            <span class="tech-pill">React.js</span>
+            <span class="tech-pill">Nest.js</span>
+            <span class="tech-pill">.NET</span>
+            
           </div>
         </div>
+
+        <div style="margin-top:18px">
+          <h4>Operating Systems</h4>
+          <div class="tech-icons" style="margin-top:8px">
+            <span class="tech-pill">Linux ( Ubuntu, CentOS, RHEL )</span>
+            <span class="tech-pill">Windows Server</span>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <h4>Web Servers</h4>
+          <div class="tech-icons" style="margin-top:8px">
+            <span class="tech-pill">Apache</span>
+            <span class="tech-pill">Nginx</span>
+            <span class="tech-pill">Tomcat</span>
+            <span class="tech-pill">IIS</span>
+          </div>
+        </div>
+
       </div>
     </section>
 
